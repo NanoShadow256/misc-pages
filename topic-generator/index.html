@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    we should talk about... <span id="topic">something</span><br />
+    <button id="newtopic">new topic</button>
+    <script>
+      const topicList = ['apples', 'bananas', 'oranges'];
+      function generateTopic() {
+        document.querySelector('#topic').innerHTML = topicList[Math.floor(Math.random() * topicList.length)];
+      }
+      document.querySelector('#newtopic').addEventListener('click', generateTopic);
+    </script>
+  </body>
+</html>
