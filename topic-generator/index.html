@@ -4,14 +4,37 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    we should talk about... <span id="topic">something</span><br />
+    we should talk about... <span id="topic">something</span>!<br />
     <button id="newtopic">new topic</button>
     <script>
-      const topicList = ['apples', 'bananas', 'oranges'];
+      const topicList = [
+        'OCs',
+        'what the worst thing to say at a funeral would be',
+        'how many chickens it would take to kill an elephant',
+        'our hypefixations yaaaayy yippie yeaayyyyyy :3',
+        'evolution',
+        'ear power',
+        'childhood memories',
+        'the meaning of life',
+        'talking',
+        'the SCP Foundation',
+        'the current state of society',
+        'the WOKE mind virus',
+        'what your friends/family would assume you had done if you were arrested with no explanation',
+        'which two completely regular activites would become incredibly suspicious or weird if done back-to-back',
+        'what the weirdest thing youve seen in someone elses home is',
+        'what movie would be least fit for a musical adaptation',
+        'funny pictures',
+        'biochemistry',
+        'the topic generator itself',
+        'art',
+        'coding'
+      ];
       function generateTopic() {
         document.querySelector('#topic').innerHTML = topicList[Math.floor(Math.random() * topicList.length)];
       }
       document.querySelector('#newtopic').addEventListener('click', generateTopic);
+      generateTopic();
     </script>
   </body>
 </html>
